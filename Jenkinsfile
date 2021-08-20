@@ -18,8 +18,8 @@ pipeline {
         sh 'mvn verify'
       }
       post {
-        success {
-          // publish html reports
+        always {
+          // publish html
           publishHTML target: [
               allowMissing: false,
               alwaysLinkToLastBuild: false,

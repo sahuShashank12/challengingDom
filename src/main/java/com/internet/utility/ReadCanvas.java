@@ -33,7 +33,7 @@ public class ReadCanvas {
 
     public String captureCanvasImage(WebElement element){
         File src = element.getScreenshotAs(OutputType.FILE);
-        String path = "src/test/resources/screenshots/canvas.png";
+        String path = System.getProperty("user.dir")+ "/src/test/resources/screenshots/canvas.png";
         File canvasImage = new File(path);
         try {
             FileHandler.copy(src,canvasImage);
