@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 20, 2021 07:53:20 PM</span></a>
+<a href="#"><span class="badge badge-primary">Aug 21, 2021 03:01:06 am</span></a>
 </li>
 </ul>
 </div>
@@ -57,11 +57,6 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
-</a>
-</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -71,25 +66,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 20, 2021 07:53:20 PM</h3>
+<h3>Aug 21, 2021 03:01:06 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 20, 2021 07:54:01 PM</h3>
+<h3>Aug 21, 2021 03:01:23 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -105,12 +100,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> features passed
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> features failed,
+<small data-tooltip='0%'><b>0</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -128,9 +123,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>3</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='100%'><b>3</b> scenarios failed,
+<small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -148,10 +143,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='15%'><b>2</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>10</b> steps passed</small></div>
 <div>
-<small data-tooltip='46%'><b>6</b> steps failed,
-<b>5</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Tests Challenging DOM Page":40.499
+"Tests Challenging DOM Page":17.03
 };
 </script>
 <div class="row">
@@ -178,11 +173,11 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>@Functional</td>
-<td>0</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -195,16 +190,16 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
 <tbody>
 <tr>
-<td>build</td>
-<td>1.1</td>
+<td>AppName</td>
+<td>CucumberHybridFramework</td>
 </tr>
 <tr>
 <td>user</td>
 <td>Shashank</td>
 </tr>
 <tr>
-<td>AppName</td>
-<td>CucumberHybridFramework</td>
+<td>build</td>
+<td>1.1</td>
 </tr>
 <tr>
 <td>os</td>
@@ -219,21 +214,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 1,
+passParent: 1,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 0,
-failChild: 3,
+passChild: 3,
+failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 2,
-failGrandChild: 6,
+passGrandChild: 10,
+failGrandChild: 0,
 warningGrandChild: 0,
-skipGrandChild: 5,
+skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -247,7 +242,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -261,25 +256,25 @@ eventsCount: 5,
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Tests Challenging DOM Page</p>
             <p class="text-sm">
-              <span>19:53:21 PM</span> / <span>00:00:40:499</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>03:01:06 am</span> / <span>00:00:17:030</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Tests Challenging DOM Page</h5>
-<span class='badge badge-success'>08.20.2021 19:53:21</span>
-<span class='badge badge-danger'>08.20.2021 19:54:01</span>
-<span class='badge badge-default'>00:00:40:499</span>
+<h5 class="test-status text-pass">Tests Challenging DOM Page</h5>
+<span class='badge badge-success'>08.21.2021 03:01:06</span>
+<span class='badge badge-danger'>08.21.2021 03:01:23</span>
+<span class='badge badge-default'>00:00:17:030</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -289,81 +284,29 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>User is able to edit first row</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User is able to edit first row</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
-              <div class="step fail-bg" title="com.internet.stepDefinitions.ChallengingDOMSteps.user_is_on_the_dom_page()">
+              <div class="step pass-bg" title="com.internet.stepDefinitions.ChallengingDOMSteps.user_is_on_the_dom_page()">
                 <span>Given user is on the dom page</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=92.0.4515.159)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'C02VG4P0G8WN', ip: '2401:4900:36a2:33e6:db0:6a73:aa25:bf63%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_302'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /var/folders/wr/99vbtpm97l1...}, goog:chromeOptions: {debuggerAddress: localhost:61582}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2721588d7e77b3bbd46c32e94d807025
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.internet.pages.ChallengingDOMPage.loadPage(ChallengingDOMPage.java:117)
-	at com.internet.stepDefinitions.ChallengingDOMSteps.user_is_on_the_dom_page(ChallengingDOMSteps.java:26)
-	at ✽.user is on the dom page(file:///Users/ssp7948/Framework/ChallengingDOM/src/test/resources/features/challengingDOMPage.feature:72)
-</textarea>
-      
       </div>
               </div>
-              <div class="step skip-bg" title="com.internet.stepDefinitions.ChallengingDOMSteps.userFetchesDetailsOfRow(int)">
+              <div class="step pass-bg" title="com.internet.stepDefinitions.ChallengingDOMSteps.userFetchesDetailsOfRow(int)">
                 <span>When user fetches details of row 1</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="com.internet.stepDefinitions.ChallengingDOMSteps.clicksOnEditButton()">
-                <span>And clicks on edit button</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="com.internet.stepDefinitions.ChallengingDOMSteps.actionShouldBePerformed(java.lang.String)">
-                <span>Then action should be performed "#edit"</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step fail-bg" title="AFTER">
-                <span>com.internet.apphooks.ApplicationHooks.takeScreenShot(io.cucumber.java.Scenario)</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
-  (Session info: chrome=92.0.4515.159)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'C02VG4P0G8WN', ip: '2401:4900:36a2:33e6:db0:6a73:aa25:bf63%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_302'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /var/folders/wr/99vbtpm97l1...}, goog:chromeOptions: {debuggerAddress: localhost:61582}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2721588d7e77b3bbd46c32e94d807025
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at com.internet.apphooks.ApplicationHooks.takeScreenShot(ApplicationHooks.java:56)
-</textarea>
-      
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.internet.stepDefinitions.ChallengingDOMSteps.clicksOnEditButton()">
+                <span>And clicks on edit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.internet.stepDefinitions.ChallengingDOMSteps.actionShouldBePerformed(java.lang.String)">
+                <span>Then action should be performed "#edit"</span>
+      <div>
       </div>
               </div>
           </div>
@@ -372,62 +315,29 @@ Session ID: 2721588d7e77b3bbd46c32e94d807025
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="11"><span class="badge log fail-bg mr-2">Fail</span>User is able to delete second row</div>
+        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>User is able to delete second row</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="com.internet.stepDefinitions.ChallengingDOMSteps.user_is_on_the_dom_page()">
                 <span>Given user is on the dom page</span>
       <div>
       </div>
               </div>
-              <div class="step fail-bg" title="com.internet.stepDefinitions.ChallengingDOMSteps.userFetchesDetailsOfRow(int)">
+              <div class="step pass-bg" title="com.internet.stepDefinitions.ChallengingDOMSteps.userFetchesDetailsOfRow(int)">
                 <span>When user fetches details of row 2</span>
       <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException
-	at com.internet.pages.ChallengingDOMPage.getRowDetails(ChallengingDOMPage.java:134)
-	at com.internet.stepDefinitions.ChallengingDOMSteps.userFetchesDetailsOfRow(ChallengingDOMSteps.java:144)
-	at ✽.user fetches details of row 2(file:///Users/ssp7948/Framework/ChallengingDOM/src/test/resources/features/challengingDOMPage.feature:81)
-</textarea>
-      
       </div>
               </div>
-              <div class="step skip-bg" title="com.internet.stepDefinitions.ChallengingDOMSteps.clicksOnDeleteButton()">
+              <div class="step pass-bg" title="com.internet.stepDefinitions.ChallengingDOMSteps.clicksOnDeleteButton()">
                 <span>And clicks on delete button</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="com.internet.stepDefinitions.ChallengingDOMSteps.actionShouldBePerformed(java.lang.String)">
-                <span>Then action should be performed "#delete"</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step fail-bg" title="AFTER">
-                <span>com.internet.apphooks.ApplicationHooks.takeScreenShot(io.cucumber.java.Scenario)</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=92.0.4515.159)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'C02VG4P0G8WN', ip: '2401:4900:36a2:33e6:db0:6a73:aa25:bf63%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_302'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /var/folders/wr/99vbtpm97l1...}, goog:chromeOptions: {debuggerAddress: localhost:61598}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 36e377d9c170b81d2979cf32193267ef
-	at sun.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at com.internet.apphooks.ApplicationHooks.takeScreenShot(ApplicationHooks.java:56)
-</textarea>
-      
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.internet.stepDefinitions.ChallengingDOMSteps.actionShouldBePerformed(java.lang.String)">
+                <span>Then action should be performed "#delete"</span>
+      <div>
       </div>
               </div>
           </div>
@@ -436,51 +346,19 @@ Session ID: 36e377d9c170b81d2979cf32193267ef
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="20"><span class="badge log fail-bg mr-2">Fail</span>Footer link loads</div>
+        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>Footer link loads</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="com.internet.stepDefinitions.ChallengingDOMSteps.user_is_on_the_dom_page()">
                 <span>Given user is on the dom page</span>
       <div>
       </div>
               </div>
-              <div class="step fail-bg" title="com.internet.stepDefinitions.ChallengingDOMSteps.footerLinkTextShouldBe(java.lang.String)">
-                <span>Then Footer link text should be "Elemental Selenium.."</span>
+              <div class="step pass-bg" title="com.internet.stepDefinitions.ChallengingDOMSteps.footerLinkTextShouldBe(java.lang.String)">
+                <span>Then Footer link text should be "Elemental Selenium"</span>
       <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException
-	at com.internet.stepDefinitions.ChallengingDOMSteps.footerLinkTextShouldBe(ChallengingDOMSteps.java:166)
-	at ✽.Footer link text should be "Elemental Selenium.."(file:///Users/ssp7948/Framework/ChallengingDOM/src/test/resources/features/challengingDOMPage.feature:89)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step fail-bg" title="AFTER">
-                <span>com.internet.apphooks.ApplicationHooks.takeScreenShot(io.cucumber.java.Scenario)</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=92.0.4515.159)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'C02VG4P0G8WN', ip: '2401:4900:36a2:33e6:db0:6a73:aa25:bf63%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_302'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /var/folders/wr/99vbtpm97l1...}, goog:chromeOptions: {debuggerAddress: localhost:61619}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9fd4a7d29e297b19ad629a8a7c440b1a
-	at sun.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at com.internet.apphooks.ApplicationHooks.takeScreenShot(ApplicationHooks.java:56)
-</textarea>
-      
       </div>
               </div>
           </div>
@@ -509,7 +387,7 @@ Session ID: 9fd4a7d29e297b19ad629a8a7c440b1a
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>3</span>
+<span class='badge log pass-bg'>3</span>
 </span>
 <p class="name">@Functional</p>
 <p class="duration text-sm">3 tests</p>
@@ -517,7 +395,7 @@ Session ID: 9fd4a7d29e297b19ad629a8a7c440b1a
 <div class="test-contents d-none">
 <div class="info">
 <h4>@Functional</h4>
-<span status="fail" class='badge log badge-danger'>3 failed</span>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -528,9 +406,9 @@ Session ID: 9fd4a7d29e297b19ad629a8a7c440b1a
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:53:21 PM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:01:06 am</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>User is able to edit first row</a>
 <div class="">
@@ -538,9 +416,9 @@ Session ID: 9fd4a7d29e297b19ad629a8a7c440b1a
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:53:25 PM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:01:12 am</td>
 <td>
 <a href="#" class="linked" test-id='1' id='11'>User is able to delete second row</a>
 <div class="">
@@ -548,167 +426,13 @@ Session ID: 9fd4a7d29e297b19ad629a8a7c440b1a
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:53:43 PM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:01:18 am</td>
 <td>
 <a href="#" class="linked" test-id='1' id='20'>Footer link loads</a>
 <div class="">
 <span class="badge badge-default">Tests Challenging DOM Page.Footer link loads</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">org.openqa.selenium.NoSuchWindowException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.NoSuchWindowException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:53:25 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='9'>com.internet.apphooks.ApplicationHooks.takeScreenShot(io.cucumber.java.Scenario)</a>
-<div class="">
-<span class="badge badge-default">Tests Challenging DOM Page.User is able to edit first row.com.internet.apphooks.ApplicationHooks.takeScreenShot(io.cucumber.java.Scenario)</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:53:43 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='18'>com.internet.apphooks.ApplicationHooks.takeScreenShot(io.cucumber.java.Scenario)</a>
-<div class="">
-<span class="badge badge-default">Tests Challenging DOM Page.User is able to delete second row.com.internet.apphooks.ApplicationHooks.takeScreenShot(io.cucumber.java.Scenario)</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:54:01 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='25'>com.internet.apphooks.ApplicationHooks.takeScreenShot(io.cucumber.java.Scenario)</a>
-<div class="">
-<span class="badge badge-default">Tests Challenging DOM Page.Footer link loads.com.internet.apphooks.ApplicationHooks.takeScreenShot(io.cucumber.java.Scenario)</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">java.lang.NullPointerException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>java.lang.NullPointerException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:53:28 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='15'>When user fetches details of row 2</a>
-<div class="">
-<span class="badge badge-default">Tests Challenging DOM Page.User is able to delete second row.When user fetches details of row 2</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:53:46 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='24'>Then Footer link text should be "Elemental Selenium.."</a>
-<div class="">
-<span class="badge badge-default">Tests Challenging DOM Page.Footer link loads.Then Footer link text should be "Elemental Selenium.."</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">org.openqa.selenium.WebDriverException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.WebDriverException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:53:24 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='5'>Given user is on the dom page</a>
-<div class="">
-<span class="badge badge-default">Tests Challenging DOM Page.User is able to edit first row.Given user is on the dom page</span>
 </div>
 </td>
 </tr>

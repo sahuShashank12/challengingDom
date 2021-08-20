@@ -99,9 +99,6 @@
                 <version>3.0.0-M3</version>
                 <executions>
                     <execution>
-                        <goals>
-                            <goal>integration-test</goal>
-                        </goals>
                         <configuration>
                             <includes>
                                 <include>**/TestRunner.java</include>
