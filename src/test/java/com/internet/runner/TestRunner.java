@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"com/internet/stepDefinitions", "com/internet/apphooks"},
-        tags= "@Functional" ,//or @Regression",
+        tags= "@Functional or @Regression",
         plugin = {"pretty",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", //"timeline:test-output-thread/,"
                  "rerun:src/test/resources/failedScenario.txt"

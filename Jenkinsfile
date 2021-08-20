@@ -8,7 +8,7 @@ pipeline {
     stage ('Checkout') {
       steps {
         // Get some code from a GitHub repository
-        git branch: 'main', url: 'https://github.com/sahuShashank12/CucumberHybridFramework.git'
+        git branch: 'main', url: 'git@github.com:sahuShashank12/challengingDom.git'
       }
     }
 
@@ -18,20 +18,16 @@ pipeline {
         sh 'mvn verify'
       }
       post {
-        always {
-          // publish html
+        success {
+          // publish html reports
           publishHTML target: [
               allowMissing: false,
               alwaysLinkToLastBuild: false,
               keepAll: true,
-              reportDir: 'coverage',
-              reportFiles: 'index.html',
-              reportName: 'RCov Report'
+              reportDir: 'test-output/SparkReport',
+              reportFiles: 'Index.html',
+              reportName: 'Test Run Report'
             ]
-        }
-        success {
-        	junit '**/target/surefire-reports/TEST-*.xml'
-        	archiveArtifacts 'target/*.jar'
         }
       }
     }
