@@ -86,4 +86,4 @@ Feature: Tests Challenging DOM Page
   @Functional
   Scenario: Footer link loads
     Given user is on the dom page
-    Then Footer link text should be "Elemental Selenium.."
+    Then Footer link text should be "Elemental Selenium"
